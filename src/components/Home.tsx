@@ -8,11 +8,13 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
+        <div className="flex flex-col justify-center h-full sm:mr-10">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            프론트엔드 개발자 조강훈입니다.
+            프론트엔드 개발자 <br /> 조강훈입니다.
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">자기소개를 넣어볼까욤</p>
+          <p className="text-gray-500 py-4 max-w-md">
+            총 경력 11개월, React, Next.JS, TS를 주로 사용하고 있습니다.
+          </p>
           <div>
             <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-b-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
               Portfolio
