@@ -3,10 +3,29 @@ import dafalza from '../assets/portfolio/dafalza.png';
 import incourserun from '../assets/portfolio/incourserun.png';
 import stauter from '../assets/portfolio/stauter.png';
 
-const PROJECT_LIST = [
-  { id: 1, src: dafalza },
-  { id: 2, src: incourserun },
-  { id: 3, src: stauter },
+const OFFICIAL_PROJECT_LIST = [
+  {
+    id: 1,
+    src: dafalza,
+    demo: 'https://ownerclan.com/V2/info_page/dafalza2.php',
+    detail: 'https://www.notion.so/153f21e6b7de4505b3df259aa204a72b',
+  },
+  {
+    id: 2,
+    src: stauter,
+    demo: 'https://stauter.contact',
+    detail: 'https://www.notion.so/Stauter-1a005404c12946149f4ffd521659f22f',
+  },
+];
+
+const PERSONAL_PROJECT_LIST = [
+  {
+    id: 3,
+    src: incourserun,
+    demo: 'https://fastcampas-5-commerce-fe-nwm6-idxtxcuz8-kylecho.vercel.app/login',
+    detail:
+      'https://www.notion.so/incourse-run-ae3493ac5d0a4504b6ddf83fd6b56d66',
+  },
   // { id: 4, src: 'hi' },
 ];
 
@@ -26,18 +45,60 @@ const Portfolio = () => {
             수 있습니다.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {PROJECT_LIST.map(({ id, src }) => {
+        <div className="pb-4">
+          <p className="text-xl font-bold inline border-b-4 border-gray-500">
+            사내 프로젝트
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 pb-8 sm:px-0">
+          {OFFICIAL_PROJECT_LIST.map(({ id, src, demo, detail }) => {
             return (
               <div
                 key={id}
-                className="flex shadow-md justify-center items-center shadow-gray-600 rounded-lg"
+                className="shadow-md justify-center items-center shadow-gray-600 rounded-lg"
               >
                 <img
                   src={src}
                   alt=""
                   className="rounded-md duration-200 hover:scale-105"
                 />
+                <div className="flex items-center justify-center">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    <a href={demo}>Demo</a>
+                  </button>
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    <a href={detail}>Detail</a>
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="pb-4">
+          <p className="text-xl font-bold inline border-b-4 border-gray-500">
+            개인 프로젝트
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {PERSONAL_PROJECT_LIST.map(({ id, src, demo, detail }) => {
+            return (
+              <div
+                key={id}
+                className="shadow-md justify-center items-center shadow-gray-600 rounded-lg"
+              >
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105"
+                />
+                <div className="flex items-center justify-center">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    <a href={demo}>Demo</a>
+                  </button>
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    <a href={detail}>Detail</a>
+                  </button>
+                </div>
               </div>
             );
           })}
