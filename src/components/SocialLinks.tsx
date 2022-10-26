@@ -21,7 +21,7 @@ const SOCIAL_LIST = [
         GitHub <FaGithub size={30} />
       </>
     ),
-    href: undefined,
+    href: 'https://github.com/San-Goon',
   },
   {
     id: 3,

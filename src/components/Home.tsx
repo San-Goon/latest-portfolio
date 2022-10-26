@@ -1,5 +1,7 @@
 import React from 'react';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import { Link } from 'react-scroll';
+import heroImage from '../assets/heroimage.jpg';
 
 const Home = () => {
   return (
@@ -16,17 +18,22 @@ const Home = () => {
             총 경력 11개월, React, Next.JS, TS를 주로 사용하고 있습니다.
           </p>
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-b-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div>
           <img
-            src="https://www.w3schools.com/images/picture.jpg"
+            src={heroImage}
             alt="me"
             className="rounded-2xl mx-auto w=2/3 md:w-full"
           />
