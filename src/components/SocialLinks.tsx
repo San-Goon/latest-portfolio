@@ -4,16 +4,16 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const SOCIAL_LIST = [
-  {
-    id: 1,
-    child: (
-      <>
-        LinkedIn <FaLinkedin size={30} />
-      </>
-    ),
-    href: undefined,
-    style: 'rounded-tr-md',
-  },
+  // {
+  //   id: 1,
+  //   child: (
+  //     <>
+  //       LinkedIn <FaLinkedin size={30} />
+  //     </>
+  //   ),
+  //   href: undefined,
+  //   style: 'rounded-tr-md',
+  // },
   {
     id: 2,
     child: (
@@ -22,6 +22,7 @@ const SOCIAL_LIST = [
       </>
     ),
     href: 'https://github.com/San-Goon',
+    style: 'rounded-tr-md',
   },
   {
     id: 3,
@@ -39,7 +40,7 @@ const SOCIAL_LIST = [
         Resume <BsFillPersonLinesFill size={30} />
       </>
     ),
-    href: undefined,
+    href: 'resume.pdf',
     download: true,
   },
 ];
