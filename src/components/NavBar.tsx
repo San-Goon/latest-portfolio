@@ -24,7 +24,7 @@ const NavBar = () => {
               className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
             >
               <Link to={link} smooth duration={500}>
-                <button onClick={onClickFabars}>{link}</button>
+                {link}
               </Link>
             </li>
           );
