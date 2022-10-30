@@ -1,5 +1,32 @@
 import React from 'react';
 
+const ABOUT_LIST = [
+  {
+    id: 1,
+    title: '소프트 스킬의 중요성을 알고 있습니다.',
+    content:
+      '혼자 하는 일이 아닌 협업을 하는 만큼, 팀의 능률을 높일 수 있도록 최선을 다합니다.',
+  },
+  {
+    id: 2,
+    title: '효율성을 중요시 합니다.',
+    content:
+      '나를 위해, 남들에게 피해를 끼치지 않기 위해 최대한 효율적으로 일을 하려고 노력합니다.',
+  },
+  {
+    id: 3,
+    title: '성장과 배움을 좋아합니다.',
+    content:
+      '새로운 기술에 대해 관심이 많고, 알고 있던 지식도 한 번 더 짚어가며 어제보다 나은 사람이 되는 것을 즐깁니다.',
+  },
+  {
+    id: 4,
+    title: '필요한 사람이 되고자 노력합니다.',
+    content:
+      '개발 관련 부분만이 아닌 다방면으로, 인간미도 갖추어 많은 사람이 필요로 하는 개발자가 되고자 합니다.',
+  },
+];
+
 const About = () => {
   return (
     <div
@@ -13,22 +40,16 @@ const About = () => {
           </p>
         </div>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-8 py-8 px-12 sm:px-0">
-          <div>
-            <p className="text-2xl">학력</p>
-            <p className="pt-6">안양대학교 정보전기전자공학과 졸업</p>
-            <p className="text-gray-500 pt-2">2014.03~2021.02</p>
-            <p className="pt-6">메가바이트스쿨 프론트엔드 과정 5기 수료</p>
-            <p className="text-gray-500 pt-2">2022.07~2022.11</p>
-          </div>
-          <div>
-            <p className="text-2xl">경력</p>
-            <p className="pt-6">라스트일마일</p>
-            <p className="text-gray-500 pt-2">프론트엔드 개발자</p>
-            <p className="text-gray-500">2021.11~2022.07</p>
-            <p className="pt-6">똑똑한개발자</p>
-            <p className="text-gray-500 pt-2">프론트엔드 개발자 / 인턴</p>
-            <p className="text-gray-500">2022.09~2022.11</p>
-          </div>
+          {ABOUT_LIST.map(({ id, title, content }) => {
+            return (
+              <div key={id}>
+                <div>
+                  <p className="text-2xl">{title}</p>
+                </div>
+                <p className="pt-6">{content}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -15,7 +15,8 @@ const Home = () => {
             프론트엔드 개발자 <br /> 조강훈입니다.
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            총 경력 11개월, React, Next.JS, TS를 주로 사용하고 있습니다.
+            React 와 Next.JS, TypeScript 를 주요 기술로 사용하며, Github 등 여러
+            협업툴을 이용하여 협업을 해본 경험을 가지고 있습니다.
           </p>
           <div>
             <Link
