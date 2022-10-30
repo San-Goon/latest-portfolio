@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
@@ -40,8 +40,7 @@ const SOCIAL_LIST = [
         Resume <BsFillPersonLinesFill size={30} />
       </>
     ),
-    href: 'resume.pdf',
-    download: true,
+    href: 'https://drive.google.com/file/d/1xCJ7zIbwNA5xGRoZ5m176jsuLlRGMnyx/view?usp=sharing',
   },
 ];
 
@@ -49,7 +48,7 @@ const SocialLinks = () => {
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {SOCIAL_LIST.map(({ id, child, href, style, download }) => {
+        {SOCIAL_LIST.map(({ id, child, href, style }) => {
           return (
             <li
               key={id}
@@ -62,7 +61,6 @@ const SocialLinks = () => {
               <a
                 href={href}
                 className="flex justify-between items-center w-full text-white"
-                download={download}
                 target="_blank"
                 rel="noreferrer noopenner"
               >

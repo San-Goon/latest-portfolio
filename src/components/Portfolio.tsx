@@ -8,13 +8,15 @@ const OFFICIAL_PROJECT_LIST = [
     id: 1,
     src: dafalza,
     demo: 'https://ownerclan.com/V2/info_page/dafalza2.php',
-    detail: 'https://www.notion.so/153f21e6b7de4505b3df259aa204a72b',
+    detail:
+      'https://magenta-forest-566.notion.site/153f21e6b7de4505b3df259aa204a72b',
   },
   {
     id: 2,
     src: stauter,
     demo: 'https://stauter.contact',
-    detail: 'https://www.notion.so/Stauter-1a005404c12946149f4ffd521659f22f',
+    detail:
+      'https://magenta-forest-566.notion.site/Stauter-1a005404c12946149f4ffd521659f22f',
   },
 ];
 
@@ -24,7 +26,7 @@ const PERSONAL_PROJECT_LIST = [
     src: incourserun,
     demo: 'https://fastcampas-5-commerce-fe-nwm6-idxtxcuz8-kylecho.vercel.app/login',
     detail:
-      'https://www.notion.so/incourse-run-ae3493ac5d0a4504b6ddf83fd6b56d66',
+      'https://magenta-forest-566.notion.site/incourse-run-ae3493ac5d0a4504b6ddf83fd6b56d66',
   },
   // { id: 4, src: 'hi' },
 ];
