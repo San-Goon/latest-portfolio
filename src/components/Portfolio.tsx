@@ -66,10 +66,14 @@ const Portfolio = () => {
                 />
                 <div className="flex items-center justify-center">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    <a href={demo}>Demo</a>
+                    <a href={demo} target="_blank" rel="noopener noreferrer">
+                      Demo
+                    </a>
                   </button>
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    <a href={detail}>Detail</a>
+                    <a href={detail} target="_blank" rel="noopener noreferrer">
+                      Detail
+                    </a>
                   </button>
                 </div>
               </div>
@@ -95,10 +99,14 @@ const Portfolio = () => {
                 />
                 <div className="flex items-center justify-center">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    <a href={demo}>Demo</a>
+                    <a href={demo} target="_blank" rel="noopener noreferrer">
+                      Demo
+                    </a>
                   </button>
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    <a href={detail}>Detail</a>
+                    <a href={detail} target="_blank" rel="noopener noreferrer">
+                      Detail
+                    </a>
                   </button>
                 </div>
               </div>
