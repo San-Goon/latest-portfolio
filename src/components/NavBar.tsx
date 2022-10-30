@@ -51,6 +51,28 @@ const NavBar = () => {
               </li>
             );
           })}
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            <button onClick={onClickFabars}>
+              <a
+                href="https://github.com/San-Goon"
+                target="_blank"
+                rel="noreferrer noopenner"
+              >
+                Github
+              </a>
+            </button>
+          </li>
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            <button onClick={onClickFabars}>
+              <a
+                href="https://drive.google.com/file/d/1xCJ7zIbwNA5xGRoZ5m176jsuLlRGMnyx/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer noopenner"
+              >
+                Resume
+              </a>
+            </button>
+          </li>
         </ul>
       )}
     </div>
