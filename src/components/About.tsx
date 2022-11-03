@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const ABOUT_LIST = [
   {
@@ -28,12 +28,32 @@ const ABOUT_LIST = [
 ];
 
 const About = () => {
+  useEffect(() => {
+    const targets = document.querySelectorAll('.js-show-on-scroll');
+
+    const callback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('motion-safe:animate-fadeIn');
+        } else {
+          entry.target.classList.remove('motion-safe:animate-fadeIn');
+        }
+      });
+    };
+    const observer = new IntersectionObserver(callback);
+
+    targets.forEach((target) => {
+      target.classList.add('opacity-0');
+      observer.observe(target);
+    });
+  }, []);
+
   return (
     <div
       id="about"
       className="w-full bg-gradient-to-b from-gray-800 to-black text-white"
     >
-      <div className="max-w-screen-lg p-4 py-10 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 py-10 mx-auto flex flex-col justify-center w-full h-full js-show-on-scroll">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
