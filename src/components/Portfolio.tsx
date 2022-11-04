@@ -2,6 +2,7 @@ import React from 'react';
 import dafalza from '../assets/portfolio/dafalza.png';
 import incourserun from '../assets/portfolio/incourserun.png';
 import stauter from '../assets/portfolio/stauter.png';
+import slack from '../assets/portfolio/slack.png';
 
 const OFFICIAL_PROJECT_LIST = [
   {
@@ -28,7 +29,13 @@ const PERSONAL_PROJECT_LIST = [
     detail:
       'https://magenta-forest-566.notion.site/incourse-run-ae3493ac5d0a4504b6ddf83fd6b56d66',
   },
-  // { id: 4, src: 'hi' },
+  {
+    id: 4,
+    src: slack,
+    demo: 'https://slack-clone-front.vercel.app/',
+    detail:
+      'https://magenta-forest-566.notion.site/slack-c4fe244a9b1f474aa1fa86ca1e7a01b5',
+  },
 ];
 
 const Portfolio = () => {
