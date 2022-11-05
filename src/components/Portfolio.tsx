@@ -32,7 +32,7 @@ const PERSONAL_PROJECT_LIST = [
   {
     id: 4,
     src: slack,
-    demo: 'https://slack-clone-front.vercel.app/',
+    demo: 'https://slack-clone-one-beta.vercel.app/',
     detail:
       'https://magenta-forest-566.notion.site/slack-c4fe244a9b1f474aa1fa86ca1e7a01b5',
   },
